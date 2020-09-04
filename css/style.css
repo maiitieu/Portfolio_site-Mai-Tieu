@@ -1,3 +1,7 @@
+img {
+  width: 100%;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'poppins', sans-serif;
@@ -11,16 +15,9 @@ body {
 }
 
 h1, h2, h3, h4 {
-  background-color: #ffffff;
   font-family: 'playfair display', serif;
-  font-size: 32px;
-  /* Sets the font size to 16px */
-  font-weight: 300;
-  /* Sets the font weight to 300 */
-  line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font-size */
-  color: #535353;
   line-height: 1.4;
+  /* Sets the line-height to 1.4 * the font-size */
 }
 
 h1 {
@@ -49,42 +46,42 @@ a {
   /* No underlining */
 }
 
+a:visited {
+  /* visited link */
+  color: #ffaaaa;
+}
+
 a:hover {
-  color: orange;
+  color: #fa9999;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
 
-a:visited {
-  /* visited link */
-  color: #fac36b;
+a:focus {
+  color: #fa8888;
+  text-decoration: underline;
 }
 
 a:active {
   /* selected link */
-  color: chocolate;
-}
-
-a:hover,
-a:focus {
-  color: orange;
-  text-decoration: underline;
-}
-
-img {
-  width: 100%;
+  color: #fa8888;
 }
 
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #fff2e6;
-  color: #ff8888;
+  background-color: #ffffff;
+  color: #ffaaaa;
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 4px;
   transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
 }
 
 .button:active {
@@ -102,18 +99,24 @@ img {
 .button.contact {
   background-color: transparent;
   color: #ffaaaa;
-  text-transform: uppercase;
   border: 2px solid #ffaaaa;
 }
 
-.button.contact:active {
-  background-color: #ff8888;
+.button.contact:hover {
+  background-color: #ffaaaa;
   color: #ffffff;
 }
 
-.button.contact:hover {
-  background-color: #ff8888;
-  color: #ffffff;
+.button.contact:active {
+  background-color: #ffaaaa;
+  color: #535353;
+}
+
+.navigation {
+  background-color: #ffffff;
+  color: #535353;
+  /* needed to override the default link color */
+  transition: 0.2s opacity;
 }
 
 /* specific button rules that must be kept at bottom of code */
