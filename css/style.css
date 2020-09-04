@@ -58,13 +58,13 @@ a:hover {
 }
 
 a:focus {
-  color: #fa8888;
+  color: #e87d7d;
   text-decoration: underline;
 }
 
 a:active {
   /* selected link */
-  color: #fa8888;
+  color: #e87d7d;
 }
 
 .button {
@@ -109,7 +109,7 @@ a:active {
 
 .button.contact:active {
   background-color: #ffaaaa;
-  color: #535353;
+  color: #e87d7d;
 }
 
 .navigation {
