@@ -1,0 +1,119 @@
+body {
+  background-color: #ffffff;
+  font-family: 'poppins', sans-serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #535353;
+}
+
+h1, h2, h3, h4 {
+  background-color: #ffffff;
+  font-family: 'playfair display', serif;
+  font-size: 32px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #535353;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 1.90em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.60em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.30em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.00em;
+  font-weight: 400;
+}
+
+a {
+  color: #ffaaaa;
+  text-decoration: none;
+  /* No underlining */
+}
+
+a:hover {
+  color: orange;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+a:visited {
+  /* visited link */
+  color: #fac36b;
+}
+
+a:active {
+  /* selected link */
+  color: chocolate;
+}
+
+a:hover,
+a:focus {
+  color: orange;
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+}
+
+.button {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #fff2e6;
+  color: #ff8888;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 4px;
+  transition: 0.2s opacity;
+}
+
+.button:active {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button:hover {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #ffaaaa;
+  text-transform: uppercase;
+  border: 2px solid #ffaaaa;
+}
+
+.button.contact:active {
+  background-color: #ff8888;
+  color: #ffffff;
+}
+
+.button.contact:hover {
+  background-color: #ff8888;
+  color: #ffffff;
+}
+
+/* specific button rules that must be kept at bottom of code */
