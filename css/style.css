@@ -41,14 +41,14 @@ h4 {
 }
 
 a {
-  color: #ffaaaa;
+  color: #535353;
   text-decoration: none;
   /* No underlining */
 }
 
 a:visited {
   /* visited link */
-  color: #ffaaaa;
+  color: #535353;
 }
 
 a:hover {
@@ -69,28 +69,20 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #ffffff;
+  background-color: #fff2e6;
   color: #ffaaaa;
   /* needed to override the default link color */
-  font-weight: 400;
   padding: 10px;
-  border-radius: 4px;
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
   text-decoration: none;
 }
 
 .button:active {
-  opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-}
-
-.button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
@@ -109,14 +101,7 @@ a:active {
 
 .button.contact:active {
   background-color: #ffaaaa;
-  color: #e87d7d;
-}
-
-.navigation {
-  background-color: #ffffff;
   color: #535353;
-  /* needed to override the default link color */
-  transition: 0.2s opacity;
 }
 
 /* specific button rules that must be kept at bottom of code */
