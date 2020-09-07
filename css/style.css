@@ -2,6 +2,19 @@ img {
   width: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #fff2e6;
+  padding: 10px;
+  margin: 0px;
+  box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.23);
+  position: fixed;
+  width: 100%;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'poppins', sans-serif;
@@ -51,15 +64,10 @@ a:visited {
   color: #535353;
 }
 
-a:hover {
+a:hover, a:focus {
   color: #fa9999;
   text-decoration: underline;
   /* Underlining when hovering over a link */
-}
-
-a:focus {
-  color: #e87d7d;
-  text-decoration: underline;
 }
 
 a:active {
@@ -76,9 +84,13 @@ a:active {
   transition: 0.2s opacity;
 }
 
+.button:visited {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
 .button:hover {
-  text-decoration: underline;
-  /* Underlining when hovering over a link */
   text-decoration: none;
 }
 
@@ -91,6 +103,7 @@ a:active {
 .button.contact {
   background-color: transparent;
   color: #ffaaaa;
+  padding: 10px;
   border: 2px solid #ffaaaa;
 }
 
@@ -105,3 +118,108 @@ a:active {
 }
 
 /* specific button rules that must be kept at bottom of code */
+/* Layout styling */
+.container {
+  padding: 0 10px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#hero {
+  background-color: #ffffff;
+  padding: 264px 0px 0px 0px;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
+
+h2 {
+  text-align: center;
+  /* Centers text */
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav>ul>li>visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav>ul>li>hover, nav>ul>li>focus {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffaaaa;
+}
+
+nav>ul>li>active {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.cv {
+  display: block;
+  text-align: center;
+}
+
+#contact {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+}
+
+#social {
+  list-style-type: none;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+}
