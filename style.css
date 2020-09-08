@@ -1,0 +1,344 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #fff2e6;
+  margin: 0px;
+  text-align: center;
+  box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.23);
+  position: fixed;
+  width: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'poppins', sans-serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #535353;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'playfair display', serif;
+  line-height: 1.4;
+  /* Sets the line-height to 1.4 * the font-size */
+}
+
+h1 {
+  font-size: 1.90em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.60em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.30em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.00em;
+  font-weight: 400;
+}
+
+a {
+  color: #535353;
+  text-decoration: none;
+  /* No underlining */
+}
+
+a:visited {
+  /* visited link */
+  color: #535353;
+}
+
+a:hover, a:focus {
+  color: #fa9999;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+a:active {
+  /* selected link */
+  color: #535353;
+}
+
+.button, :visited {
+  display: inline-block;
+  background-color: #fff2e6;
+  color: #ffaaaa;
+  /* needed to override the default link color */
+  padding: 10px;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button:active {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #ffaaaa;
+  padding: 10px;
+  border: 2px solid #ffaaaa;
+}
+
+.button.contact:hover {
+  background-color: #ffaaaa;
+  color: #ffffff;
+}
+
+.button.contact:active {
+  background-color: #ffaaaa;
+  color: #535353;
+}
+
+.button.view {
+  color: #ffaaaa;
+  padding: 10px;
+}
+
+.button.view:hover {
+  color: #535353;
+  text-decoration: underline
+}
+
+.button.view:active {
+  color: #535353;
+  text-decoration: none
+}
+
+/* specific button rules that must be kept at bottom of code */
+/* Layout styling */
+.container {
+  padding: 0 10px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+.section.hero {
+  background-color: #ffffff;
+  padding: 164px 0px 0px 0px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+#hero span {
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  /* Centers text */
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  max-width: 150px;
+  display: inline-block;
+  margin: 0px;
+}
+
+img {
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav>ul>li>visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav>ul>li>hover, nav>ul>li>focus {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffaaaa;
+}
+
+nav>ul>li>active {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.cv {
+  display: block;
+  text-align: center;
+}
+
+.contact {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+}
+
+.social li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.project svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.project2 svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+/* ==============================
+Animation
+================================= */
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.lightbulb {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(7deg);
+  }
+}
+
+.pink-cog {
+  animation: rotation 7s infinite;
+}
+
+.big-cog {
+  animation: rotation 10s infinite;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .section.hero {
+    padding: 140px 0px 0px 0px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px 0 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about-page h2 {
+    text-align: left;
+    display: inline-block;
+    margin: 0px
+  }
+
+  #about-page h3 {
+    margin: 0 0 10px 0;
+  }
+
+  /* ==============================
+Large devices (1024px or larger)
+================================= */
+  @media only screen and (min-width: 1024px) {}
+
+  .col-lg-5 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 50%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
