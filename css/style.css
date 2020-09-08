@@ -4,8 +4,8 @@
 
 header {
   background-color: #fff2e6;
-  padding: 10px;
   margin: 0px;
+  text-align: center;
   box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.23);
   position: fixed;
   width: 100%;
@@ -144,20 +144,16 @@ a:active {
   border-bottom: 1px solid #4a4a4a;
 }
 
-#hero {
+.section.hero {
   background-color: #ffffff;
-  padding: 159px 0px 0px 0px;
+  padding: 164px 0px 0px 0px;
   display: inline-block;
+  text-align: center;
   width: 100%;
 }
 
-#hero {
-  text-align: center;
-  /* Centers text */
-}
-
-#hero span {
-  font-weight: lighter;
+.hero h1 span {
+  font-size: smaller;
 }
 
 h2 {
@@ -171,18 +167,11 @@ h2 {
 
 .logo {
   max-width: 150px;
-  text-align: center;
   display: inline-block;
   margin: 0px;
 }
 
 img {
-  width: 100%;
-}
-
-nav {
-  display: inline-block;
-  text-align: center;
   width: 100%;
 }
 
@@ -228,7 +217,7 @@ nav>ul>li>active {
   text-align: center;
 }
 
-#contact {
+.contact {
   padding-top: 10px;
   padding-bottom: 10px;
   display: inline-block;
@@ -237,9 +226,7 @@ nav>ul>li>active {
   width: 100%;
 }
 
-#social {
-  list-style-type: none;
-  padding: 10px;
+.social li {
   display: inline-block;
-  text-align: center;
+  margin: 0 20px;
 }
