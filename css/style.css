@@ -130,7 +130,6 @@ a:active {
 
 /* specific button rules that must be kept at bottom of code */
 /* Layout styling */
-
 .container {
   padding: 0 10px;
 }
@@ -147,7 +146,7 @@ a:active {
 
 #hero {
   background-color: #ffffff;
-  padding: 264px 0px 0px 0px;
+  padding: 159px 0px 0px 0px;
   display: inline-block;
   width: 100%;
 }
@@ -155,6 +154,10 @@ a:active {
 #hero h1 {
   text-align: center;
   /* Centers text */
+}
+
+#hero span {
+  font-weight: lighter;
 }
 
 h2 {
@@ -175,7 +178,6 @@ h2 {
 img {
   width: 100%;
 }
-
 
 nav {
   display: inline-block;
