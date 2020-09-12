@@ -5,10 +5,15 @@
 header {
   background-color: #fff2e6;
   margin: 0px;
+  padding-top: 15px;
   text-align: center;
   box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.23);
   position: fixed;
   width: 100%;
+}
+
+main {
+  padding-top: 111.47px;
 }
 
 body {
@@ -23,6 +28,10 @@ body {
   color: #535353;
 }
 
+nav {
+  font-size: 14px;
+}
+
 h1, h2, h3, h4 {
   font-family: 'playfair display', serif;
   line-height: 1.4;
@@ -30,18 +39,22 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 1.90em;
+  font-size: 1.60em;
   font-weight: 700;
+  margin: 20px 0 10px 0;
 }
 
 h2 {
   font-size: 1.60em;
   font-weight: 700;
+  margin: 0;
 }
 
 h3 {
   font-size: 1.30em;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 h4 {
@@ -49,111 +62,56 @@ h4 {
   font-weight: 400;
 }
 
-a {
-  color: #535353;
-  text-decoration: none;
-  /* No underlining */
-}
-
-a:visited {
-  /* visited link */
-  color: #535353;
-}
-
-a:hover, a:focus {
-  color: #fa9999;
-  text-decoration: underline;
-  /* Underlining when hovering over a link */
-}
-
-a:active {
-  /* selected link */
-  color: #535353;
-}
-
-.button, :visited {
-  display: inline-block;
-  background-color: #fff2e6;
-  color: #ffaaaa;
-  /* needed to override the default link color */
-  padding: 10px;
-  transition: 0.2s opacity;
-}
-
-.button:hover {
-  opacity: 0.8;
-  text-decoration: none;
-}
-
-.button:active {
-  opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-}
-
-.button.contact {
-  background-color: transparent;
-  color: #ffaaaa;
-  padding: 10px;
-  border: 2px solid #ffaaaa;
-}
-
-.button.contact:hover {
-  background-color: #ffaaaa;
-  color: #ffffff;
-}
-
-.button.contact:active {
-  background-color: #ffaaaa;
-  color: #535353;
-}
-
-.button.view {
-  color: #ffaaaa;
-  padding: 10px;
-}
-
-.button.view:hover {
-  color: #535353;
-  text-decoration: underline
-}
-
-.button.view:active {
-  color: #535353;
-  text-decoration: none
-}
-
-/* specific button rules that must be kept at bottom of code */
 /* Layout styling */
 .container {
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
-.row {
-  margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
-}
-
-#work .row {
+.contact_border {
+  padding-top: 10px;
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
 
-.section.hero {
+#work .row {
+  padding-top: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#work h2 {
+  text-align: center;
+}
+
+#work .button {
+  margin-bottom: 10px;
+}
+
+footer h2 {
+  padding-top: 15px;
+}
+
+footer ul {
+  margin: 0;
+}
+
+.row.about {
+  border-bottom: 1px solid #4a4a4a;
+}
+
+.hero {
   background-color: #ffffff;
-  padding: 164px 0px 0px 0px;
   display: inline-block;
   text-align: center;
   width: 100%;
 }
 
-#hero span {
-  display: block;
+.hero h1 span {
+  font-size: 75%;
 }
 
-h2 {
-  text-align: center;
-  /* Centers text */
+#contact span {
+  display: block;
 }
 
 .center {
@@ -161,13 +119,20 @@ h2 {
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 100px;
   display: inline-block;
   margin: 0px;
+  padding: 10px 0 0 10px;
 }
 
 img {
   width: 100%;
+  max-width: 350px;
+  padding: 10px 0;
+}
+
+p {
+  margin: 16px 0;
 }
 
 nav>ul {
@@ -207,94 +172,96 @@ nav>ul>li>active {
   color: #ffffff;
 }
 
-.cv {
-  display: block;
-  text-align: center;
-}
-
 .contact {
   padding-top: 10px;
   padding-bottom: 10px;
   display: inline-block;
   list-style-type: none;
   text-align: center;
-  width: 100%;
+}
+
+.skills h2 {
+  padding-bottom: 18px;
+}
+
+.social ul {
+  padding: 0;
 }
 
 .social li {
   display: inline-block;
   margin: 0 20px;
 }
-.project svg {
-width: 100%;
- max-width: 100%;
-height: auto;
-}
-.project2 svg {
-width: 100%;
- max-width: 100%;
-height: auto;
+
+.cambridge svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
-
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-}
-.section.hero {
-  padding: 140px 0px 0px 0px;
-}
-body {
-  font-size: 18px;
-}
-.col-md-6 {
-  width: 50%;
-}
-[class*="col-"] {
-  float: left;
-  padding: 0 10px 0 10px;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+footer {
+  text-align: center;
 }
 
-  #about-page h2 {
-    text-align: left;
-    display: inline-block;
-    margin: 0px
-  }
+/* specific button & link rules that must be kept at bottom of code */
+a {
+  color: #535353 !important;
+  text-decoration: none;
+  /* No underlining */
+}
 
-  #about-page h3 {
-    margin: 0 0 10px 0;
-  }
+a:hover {
+  color: #fa9999;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
 
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
+a:active {
+  /* selected link */
+  color: #535353;
 }
-.col-lg-5 {
-  width: 50%;
+
+.button {
+  display: inline-block;
+  background-color: #fff0f0;
+  color: #535353 !important;
+  /* needed to override the default link color */
+  padding: 10px 40px;
+  transition: 0.2s opacity;
 }
-.col-lg-7 {
-  width: 50%;
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
 }
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+
+.button.contact {
+  background-color: transparent;
+  color: #ffcece;
+  margin: 10px 0 30px 0;
+  padding: 10px 40px;
+  text-align: left;
+  border: 2px solid #ffcece;
+}
+
+.button.contact:hover {
+  background-color: #ffcece;
+  color: #ffffff !important;
+}
+
+.button.contact:active {
+  background-color: #ffcece;
+  color: #535353;
+}
+
+.button.view {
+  color: #ffcece;
+  padding: 10px 40px;
+}
+
+.button.view:hover {
+  color: #535353;
+  text-decoration: underline
 }
 
 /* ==============================
@@ -310,70 +277,277 @@ Animation
   }
 
   100% {
-    fill: #f76414;
+    fill: #f79714;
   }
 }
 
 .sun {
-  animation: 4s color-change infinite alternate linear;
+  animation: 6s color-change infinite alternate linear;
 }
 
-@keyframes cloud-move {
+@keyframes man_boat-move {
   from {
-    transform: translate(0, 50px);
+    transform: translate(0 10px);
   }
 
   to {
-    transform: translate(200px, 50px);
+    transform: translate(400px, 0);
   }
 }
 
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+.man_boat {
+  animation: 14s man_boat-move infinite linear;
 }
 
-@keyframes cloud-move-reverse {
+@keyframes water_2-move {
   from {
-    transform: translate(446px, 48px);
+    transform: translate(0, 10px);
   }
 
   to {
-    transform: translate(100px, 48px);
+    transform: translate(320px, 0);
   }
 }
 
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+.water_2 {
+  animation: 24s water_2-move infinite linear;
 }
 
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.lightbulb {
-  animation: 4s color-change infinite alternate linear;
-}
-@keyframes rotation {
+@keyframes small_cloud-move {
   from {
-    transform: rotate(0deg);
+    transform: translate(0, 0);
   }
+
   to {
-    transform: rotate(7deg);
+    transform: translate(200px, 0);
   }
 }
-.pink-cog {
-  animation: rotation 7s infinite ;
+
+.small_cloud {
+  animation: 24s small_cloud-move infinite alternate linear;
 }
-.big-cog {
-  animation: rotation 10s infinite ;
+
+@keyframes large_cloud-move-reverse {
+  from {
+    transform: translate(-50px, 0);
+  }
+
+  to {
+    transform: translate(-300px, 0);
+  }
+}
+
+.large_cloud {
+  animation: 20s large_cloud-move-reverse infinite alternate linear;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  .logo {
+    max-width: 100px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  h3 {
+    padding-top: 5px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  main {
+    padding-top: 87px;
+  }
+
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px 0 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about-page h2 {
+    text-align: left;
+    display: inline-block;
+    margin: 0px
+  }
+
+  #about-page h3 {
+    margin: 0 0 10px 0;
+  }
+
+  .nalu img {
+    width: 100%;
+    max-width: 800px;
+    max-height: 1000px;
+  }
+
+  .mai img {
+    width: 100%;
+    max-width: 800px;
+    max-height: 1000px;
+  }
+
+  .cambridge svg {
+    width: 100%;
+    max-width: 800px;
+    max-height: 1000px;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  main {
+    padding-top: 90.28px;
+  }
+
+  .logo {
+    max-width: 120px;
+  }
+
+  .col-lg-1 {
+    width: 8.33%;
+  }
+
+  .col-lg-2 {
+    width: 16.66%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .col-lg-11 {
+    width: 91.66%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project2 svg {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+
+  .work img {
+    width: 100%;
+    max-width: 450px;
+    max-height: 450px;
+    height: auto;
+  }
+
+  .nalu img {
+    width: 100%;
+    max-width: 1200px;
+    max-height: auto;
+  }
+
+  .mai img {
+    width: 100%;
+    max-width: 1200px;
+    max-height: auto;
+  }
 }
