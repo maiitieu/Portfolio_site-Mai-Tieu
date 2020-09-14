@@ -310,7 +310,7 @@ Animation
 }
 
 .water_2 {
-  animation: 24s water_2-move infinite linear;
+  animation: 24s water_2-move infinite;
 }
 
 @keyframes small_cloud-move {
