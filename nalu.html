@@ -18,16 +18,18 @@
 <body>
 	<header>
 		<div class="container">
+			<div class="navtoggle" id="myNavtoggle">
 			<img src="img/logos/logo.png" class="logo" alt="logo Mai Tieu UX UI designer">
 			<nav>
 				<ul>
 					<li><a href="index.html"> Work</a></li>
 					<li><a href="about.html"> About</a></li>
-					<li><a href="#contact"> Contact</a></li>
+					<li><a href="#contact" onclick="menuToggle()"> Contact</a></li>
+					<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
 				</ul>
 			</nav>
 		</div>
-		<!-- close container -->
+	</div>
 	</header>
 
 	<main>
@@ -48,9 +50,13 @@
 				<div class="row">
 					<h2>Overview</h2>
 					<p>
-						nalu is a beautiful and simple to understand wind, wave and weather surf forecast,
+						Nalu is a beautiful and simple to understand wind, wave and weather surf forecast,
 						designed for surfers of all experience levels. I designed this responsive web application using Adobe XD.
 					</P>
+					<p>
+						This is a condensed version of the project, you can download the full version below.
+					</P>
+					<a href="img/nalu/files/nalu_project_Mai_Tieu.pdf" target="_blank" class="button view top">Download Nalu project</a>
 				</div>
 				<!-- close row-->
 			</div>
@@ -238,6 +244,9 @@
 			</p>
 		</div>
 	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+   <script src="js/scripts.js"></script>
 
 </body>
 

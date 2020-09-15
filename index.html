@@ -10,7 +10,7 @@
 	<script src="https://kit.fontawesome.com/e7c8327582.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -18,22 +18,24 @@
 <body>
 	<header>
 		<div class="container">
-			<img src="img/logos/logo.png" class="logo" alt="logo Mai Tieu UX UI designer">
-			<nav>
-				<ul>
-					<li><a href="index.html"> Work</a></li>
-					<li><a href="about.html"> About</a></li>
-					<li><a href="#contact"> Contact</a></li>
-				</ul>
-			</nav>
+			<div class="navtoggle" id="myNavtoggle">
+				<img src="img/logos/logo.png" class="logo" alt="logo Mai Tieu UX UI designer">
+				<nav>
+					<ul>
+						<li><a href="index.html"> Work</a></li>
+						<li><a href="about.html"> About</a></li>
+						<li><a href="#contact" onclick="menuToggle()"> Contact</a></li>
+						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
-		<!-- close container -->
 	</header>
 
 	<main>
 		<div class="section hero">
 			<div class="container">
-				<h1>Hi, my name is Mai Tieu. <br> <span> I'm a UX/UI Designer based in Cambridge England.</span> </h1>
+				<h1><span class="welcome_small">Hi,</span> <span class="welcome_large">Hello,</span> my name is Mai Tieu. <span class="new_line"> I'm a UX/UI Designer based in Cambridge England.</span> </h1>
 
 				<p>
 					I enjoy creating beautiful design solutions which fulfil user needs and business goals.
@@ -973,6 +975,7 @@
 		</div>
 	</footer>
 
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="js/scripts.js"></script>
 
 </body>
