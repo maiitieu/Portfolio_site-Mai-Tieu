@@ -26,27 +26,28 @@ body {
   font-family: 'poppins', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
-  font-weight: 300;
+  font-weight: 200;
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: #535353;
 }
 
-h1 {
+h1 span {
+  font-size: 1.60em;
   font-family: 'baldive', serif;
   line-height: 1.4;
   /* Sets the line-height to 1.4 * the font-size */
 }
 
-h2, h3, h4 {
+h1, h2, h3, h4 {
   font-family: 'playfair display', serif;
   line-height: 1.4;
   /* Sets the line-height to 1.4 * the font-size */
 }
 
 h1 {
-  font-size: 2.50em;
+  font-size: 1.60em;
   font-weight: 400;
   margin: 20px 0 10px 0;
 }
@@ -54,7 +55,7 @@ h1 {
 h2 {
   font-size: 1.30em;
   font-weight: 700;
-  margin: 0;
+  margin: 20px 0;
 }
 
 h3 {
@@ -71,7 +72,7 @@ h4 {
 
 /* Layout styling */
 .container {
-  padding: 20px 15px 10px;
+  padding: 10px 15px 10px;
 }
 
 .center {
@@ -80,10 +81,15 @@ h4 {
 
 img {
   width: 100%;
-  height: auto;3
+  height: auto;
 }
 
-picture {
+.mai {
+  background-color: #fff2e6;
+  margin-top: 20px;
+}
+
+svg {
   width: 100%;
   height: auto;
 }
@@ -92,9 +98,9 @@ p {
   margin: 16px 0;
 }
 
-
 .logo {
-  max-width: 85px;
+  max-width: 90px;
+  height: auto;
   display: inline-block;
   margin: 0px;
   padding: 10px 0;
@@ -102,10 +108,6 @@ p {
 
 .icon {
   padding-top: 6px;
-}
-
-.mai {
-  background-color: #fff2e6;
 }
 
 nav {
@@ -120,28 +122,25 @@ nav>ul {
 
 nav>ul>li>a {
   padding: 0 15px;
-  font-weight: 600;
+  font-weight: 400;
   color: #4a4a4a;
 }
 
 nav>ul>li>visited {
   padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   color: #4a4a4a;
 }
 
 nav>ul>li>hover, nav>ul>li>focus {
   padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   color: #ffaaaa;
 }
 
 nav>ul>li>active {
   padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   color: #ffffff;
 }
 
@@ -200,7 +199,7 @@ nav>ul>li>active {
 }
 
 .hero h1 span.new_line {
-  font-size: 60%;
+  font-size: 70%;
   display: block;
   font-family: "poppins", sans-serif;
   font-weight: 200;
@@ -228,10 +227,6 @@ nav>ul>li>active {
   display: block;
 }
 
-.skills h2 {
-  padding-bottom: 18px;
-}
-
 .social ul {
   padding: 0;
 }
@@ -239,16 +234,6 @@ nav>ul>li>active {
 .social li {
   display: inline-block;
   margin: 0 20px;
-}
-
-.cambridge svg {
-  width: 100%;
-  height: auto;
-}
-
-.envelope svg {
-  width: 100%;
-  height: auto;
 }
 
 .copyright {
@@ -266,7 +251,7 @@ footer ul {
 
 /* specific button & link rules that must be kept at bottom of code */
 a {
-  color: #535353 ;
+  color: #535353;
   text-decoration: none;
   /* No underlining !important*/
 }
@@ -284,8 +269,8 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #535353;
-  color: #ffffff ;
+  background-color: #ffcece;
+  color: #535353;
   /* needed to override the default link color !important */
   padding: 10px 40px;
   transition: 0.2s opacity;
@@ -302,21 +287,21 @@ a:active {
   margin: 8px 0 18px 0;
   padding: 10px 40px;
   text-align: left;
-  border: 2px solid #535353;
+  border: 2px solid #ffcece;
 }
 
 .button.contact:hover {
-  background-color: #535353;
-  color: #ffffff !important;
+  background-color: #ffaaaa;
+  color: #535353 !important;
 }
 
 .button.contact:active {
-  background-color: #535353;
+  background-color: #ffcece;
   color: #535353;
 }
 
 .button.view {
-  color: #ffffff;
+  color: #535353;
   padding: 10px 40px;
 }
 
@@ -406,48 +391,6 @@ Animation
   animation: 20s large_cloud-move-reverse infinite alternate linear;
 }
 
-@keyframes paper-move {
-  from {
-    transform: translate(0, 70px);
-  }
-
-  to {
-    transform: translate(0, 0);
-  }
-}
-
-.paper {
-  animation: 2s paper-move alternate linear;
-}
-
-@keyframes plane_left-move {
-  from {
-    transform: translate(-600px, 7px);
-  }
-
-  to {
-    transform: translate(0, 14px);
-  }
-}
-
-.plane_left {
-  animation: 2s plane_left-move linear;
-}
-
-@keyframes plane_right-move {
-  from {
-    transform: translate(0, 0);
-  }
-
-  to {
-    transform: translate(-600px), 0);
-  }
-}
-
-.plane_righ {
-  animation: 3s plane_right-move linear;
-}
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -502,16 +445,8 @@ Medium devices (640px and larger)
     padding: 14px 0 0 10px;
   }
 
-  h1 {
-    padding-top: 10px;
-  }
-
   #work h2 {
-    margin: 15px, 0;
-  }
-
-  h3 {
-    padding-top: 5px;
+    margin: 15px 0;
   }
 
   body {
@@ -572,7 +507,7 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
-    padding: 0 10px 0 10px;
+    padding: 10px 10px;
   }
 
   .row::after {
@@ -591,107 +526,81 @@ Medium devices (640px and larger)
     margin: 0 0 10px 0;
   }
 
-  .nalu img {
-    width: 100%;
-    height: auto;
+  .mai img {
+    width: auto !important;
   }
 
-  .cambridge svg {
-    width: 100%;
-    height: auto;
-  }
-
-  .envelope svg {
-    width: 100%;
-  }
-}
-
-/* ==============================
+  /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
-  nav {
-    margin-top: 9px;
-  }
+  @media only screen and (min-width: 1024px) {
+    nav {
+      margin-top: 9px;
+    }
 
-  main {
-    padding-top: 90.28px;
-  }
+    main {
+      padding-top: 90.28px;
+    }
 
-  .logo {
-    max-width: 120px;
-  }
+    .logo {
+      max-width: 120px;
+    }
 
-  .col-lg-1 {
-    width: 8.33%;
-  }
+    .col-lg-1 {
+      width: 8.33%;
+    }
 
-  .col-lg-2 {
-    width: 16.66%;
-  }
+    .col-lg-2 {
+      width: 16.66%;
+    }
 
-  .col-lg-3 {
-    width: 25%;
-  }
+    .col-lg-3 {
+      width: 25%;
+    }
 
-  .col-lg-4 {
-    width: 33.33%;
-  }
+    .col-lg-4 {
+      width: 33.33%;
+    }
 
-  .col-lg-5 {
-    width: 41.66%;
-  }
+    .col-lg-5 {
+      width: 41.66%;
+    }
 
-  .col-lg-6 {
-    width: 50%;
-  }
+    .col-lg-6 {
+      width: 50%;
+    }
 
-  .col-lg-7 {
-    width: 58.33%;
-  }
+    .col-lg-7 {
+      width: 58.33%;
+    }
 
-  .col-lg-8 {
-    width: 66.66%;
-  }
+    .col-lg-8 {
+      width: 66.66%;
+    }
 
-  .col-lg-9 {
-    width: 75%;
-  }
+    .col-lg-9 {
+      width: 75%;
+    }
 
-  .col-lg-10 {
-    width: 83.33%;
-  }
+    .col-lg-10 {
+      width: 83.33%;
+    }
 
-  .col-lg-11 {
-    width: 91.66%;
-  }
+    .col-lg-11 {
+      width: 91.66%;
+    }
 
-  .col-lg-12 {
-    width: 100%;
-  }
+    .col-lg-12 {
+      width: 100%;
+    }
 
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-  .project2 svg {
-    width: 100%;
-    height: auto;
+    footer {
+      padding: 20px 0;
+    }
   }
-
-  .work img {
-    width: 100%;
-    height: auto;
-  }
-
-  .nalu img {
-    width: 100%;
-    height: auto;
-  }
-
-  footer {
-    padding: 20px, 0;
-  }
-}

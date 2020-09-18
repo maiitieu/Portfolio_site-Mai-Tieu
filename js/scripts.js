@@ -1,4 +1,5 @@
-console.log ("Hello, welcome to my portfolio site.")
+console.log("Hello, welcome to my portfolio site.")
+
 function menuToggle() {
   var x = document.getElementById('myNavtoggle');
   if (x.className === 'navtoggle') {
