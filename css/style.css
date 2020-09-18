@@ -9,7 +9,6 @@ html {
 header {
   background-color: #fff2e6;
   margin: 0px;
-  box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.23);
   position: fixed;
   width: 100%;
 }
@@ -81,13 +80,18 @@ h4 {
 
 img {
   width: 100%;
-  max-width: 350px;
-  padding: 10px 0;
+  height: auto;3
+}
+
+picture {
+  width: 100%;
+  height: auto;
 }
 
 p {
   margin: 16px 0;
 }
+
 
 .logo {
   max-width: 85px;
@@ -98,6 +102,10 @@ p {
 
 .icon {
   padding-top: 6px;
+}
+
+.mai {
+  background-color: #fff2e6;
 }
 
 nav {
@@ -112,8 +120,7 @@ nav>ul {
 
 nav>ul>li>a {
   padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   color: #4a4a4a;
 }
 
@@ -236,13 +243,11 @@ nav>ul>li>active {
 
 .cambridge svg {
   width: 100%;
-  max-width: 350px;
   height: auto;
 }
 
 .envelope svg {
   width: 100%;
-  max-width: 160px;
   height: auto;
 }
 
@@ -261,9 +266,9 @@ footer ul {
 
 /* specific button & link rules that must be kept at bottom of code */
 a {
-  color: #535353 !important;
+  color: #535353 ;
   text-decoration: none;
-  /* No underlining */
+  /* No underlining !important*/
 }
 
 a:hover {
@@ -279,9 +284,9 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #fff0f0;
-  color: #535353 !important;
-  /* needed to override the default link color */
+  background-color: #535353;
+  color: #ffffff ;
+  /* needed to override the default link color !important */
   padding: 10px 40px;
   transition: 0.2s opacity;
 }
@@ -293,25 +298,25 @@ a:active {
 
 .button.contact {
   background-color: transparent;
-  color: #ffcece;
+  color: #535353;
   margin: 8px 0 18px 0;
   padding: 10px 40px;
   text-align: left;
-  border: 2px solid #ffcece;
+  border: 2px solid #535353;
 }
 
 .button.contact:hover {
-  background-color: #ffcece;
+  background-color: #535353;
   color: #ffffff !important;
 }
 
 .button.contact:active {
-  background-color: #ffcece;
+  background-color: #535353;
   color: #535353;
 }
 
 .button.view {
-  color: #ffcece;
+  color: #ffffff;
   padding: 10px 40px;
 }
 
@@ -588,25 +593,16 @@ Medium devices (640px and larger)
 
   .nalu img {
     width: 100%;
-    max-width: 800px;
-    max-height: 1000px;
-  }
-
-  .mai img {
-    width: 100%;
-    max-width: 800px;
-    max-height: 1000px;
+    height: auto;
   }
 
   .cambridge svg {
     width: 100%;
-    max-width: 800px;
-    max-height: 1000px;
+    height: auto;
   }
 
   .envelope svg {
     width: 100%;
-    max-width: 280px;
   }
 }
 
@@ -682,26 +678,16 @@ Large devices (1024px or larger)
 
   .project2 svg {
     width: 100%;
-    max-width: 450px;
     height: auto;
   }
 
   .work img {
     width: 100%;
-    max-width: 450px;
-    max-height: 450px;
     height: auto;
   }
 
   .nalu img {
     width: 100%;
-    max-width: 1200px;
-    height: auto;
-  }
-
-  .mai img {
-    width: 100%;
-    max-width: 1200px;
     height: auto;
   }
 
