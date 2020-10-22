@@ -295,7 +295,7 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #fffffff;
+  background-color: #ffffff;
   font-weight: 300;
   color: #2c2928;
   /* needed to override the default link color !important */
@@ -592,7 +592,7 @@ Animation
       }
 
       img.illustration {
-        width: 50%;
+        width: 40%;
         height: auto;
       }
 
